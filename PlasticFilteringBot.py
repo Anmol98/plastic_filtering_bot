@@ -206,6 +206,7 @@ def astar(Mat, start, end):
                 continue
             open_list.append(child)
 # a function to dtermine movement instrns of bot based on current location and path of the bot
+# returns a mov code of l,r,u,d,s which can be further used for serial communication over blutooth or wifi or to directly control bot
 def Bot_movement(path,img):
     aruco_list=detect_Aruco(img)
     key=path.top()
